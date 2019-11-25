@@ -13,7 +13,8 @@ class Rating extends React.Component {
 
   componentWillReceiveProps(nextProps){
     this.setState({
-      increasing: nextProps.rating > this.props.rating
+      increasing: nextProps.rating > this.props.rating,
+      decreasing: nextProps.rating < this.props.rating,
     })
   }
   render() {
